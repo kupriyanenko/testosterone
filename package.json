@@ -1,0 +1,27 @@
+{
+  "name": "testosterone",
+  "version": "0.0.0",
+  "description": "Multi Device Test framevork",
+  "main": "server/server.js",
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {
+    "socket.io": "^1.2.1"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-typescript": "^0.4.5",
+    "typescript": "^1.3.0"
+  },
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "tests",
+    "test",
+    "deveice"
+  ],
+  "author": "Alexey Kupriyanenko",
+  "license": "MIT"
+}

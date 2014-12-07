@@ -1,0 +1,26 @@
+{
+  "name": "testosterone",
+  "version": "0.0.0",
+  "authors": [
+    "Alexey Kupriyanenko <a.kupriyanenko@gmail.com>"
+  ],
+  "description": "Multi Device Test framevork",
+  "main": "client/out/index.js",
+  "keywords": [
+    "test"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jbone": "~1.0.20",
+    "requirejs": "~2.1.15",
+    "socket.io-client": "~1.2.1",
+    "underscore": "~1.7.0"
+  }
+}
