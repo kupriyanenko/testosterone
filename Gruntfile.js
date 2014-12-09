@@ -9,19 +9,25 @@ module.exports = function(grunt) {
           target: 'es5',
           basePath: 'client/src',
           sourceMap: true,
-          declaration: true
+          declaration: true,
+          references: [
+            'client/typings/tsd.d.ts'
+          ]
         }
       },
       watch: {
         src: ['client/src/**/*.ts'],
         dest: 'client/out',
         options: {
+          watch: true,
           module: 'amd',
           target: 'es5',
           basePath: 'client/src',
           sourceMap: true,
           declaration: true,
-          watch: true
+          references: [
+            'client/typings/tsd.d.ts'
+          ]
         }
       }
     }
@@ -29,6 +35,6 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks("grunt-typescript");
 
-  grunt.registerTask("ts-watch", ["typescript:watch"]);
+  grunt.registerTask("watch", ["typescript:watch"]);
   grunt.registerTask("default", ["typescript:dist"]);
 };

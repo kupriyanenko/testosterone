@@ -1,3 +1,5 @@
+declare var require;
+
 require.config({
     'baseUrl': '../client/out/',
     'paths': {
@@ -8,5 +10,10 @@ require.config({
 });
 
 require([
-    'index'
-]);
+    'server',
+    'message.handler'
+], (server, messageHandler) => {
+
+    server.connect();
+    messageHandler.start();
+});
